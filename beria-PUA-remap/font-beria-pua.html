@@ -1,0 +1,362 @@
+<html>
+<head>
+<link rel="stylesheet" media="screen" href="font-beria-pua.css" type="text/css"/>
+</head>
+
+<body>
+<h1>lalala test</h1>
+<div>lalala test</div>
+<h1>ABCDEFG</h1>
+<h1>󰁁 󰁂 󰁃 󰁄 󰁅 󰁆 󰁇 󰁈 󰁉 󰁊 󰁋 󰁌 󰁍 󰁎 󰁏 󰁐 󰁑 󰁒 󰁓 󰁔 󰁕 󰁖 󰁗 󰁘 󰁙 󰁚  </h1>
+<h1>@	A	B	C	D	E	F	G	H	I	J	K	L	M	N	O	
+	Q	R	S	T	U	V	W	X	Y	Z	[	\	]	^	_
+`	a	b	c	d	e	f	g	h	i	j	k	l	m	n	o
+p	q	r	s	t	u	v	w	x	y	z	{	|	}
+</h1>
+
+see: Beriav6.pdf
+
+
+<br>
+<code>
+E.2 Diacritics <br>
+Diacritics are used in the script:<br>
+• U+0300 COMBINING GRAVE ACCENT represents falling tone<br>
+• U+0301 COMBINING ACUTE ACCENT represents rising tone<br>
+• U+0307 COMBINING DOT ABOVE represents stress<br>
+• U+0304 COMBINING MACRON represents +ATR (Advanced Tongue Root) <br>
+</code>
+
+
+<h1> a&#x300;e&#x300;i&#x300;o&#300;u&#300; </h1>
+<H1> A&#x300;E&#X300;I&#X300;O&#300;U&#300; </H1>
+<h1> a&#x301;e&#x301;i&#x301; </h1>
+<H1> A&#X301;E&#X301;I&#X301; </H1>
+<h1> a&#x304;e&#x304;i&#x304; </h1>
+<H1> A&#X304;E&#X304;I&#X304; </H1>
+<h1> a&#x307;e&#x307;i&#x307; </h1>
+<H1> A&#X307;E&#X307;I&#X307; </H1>
+
+
+<textarea name="beriaTest" rows="10" cols="50">
+󰁁 󰁂 󰁃 󰁄 󰁅 󰁆 󰁇 󰁈 󰁉 󰁊
+
+
+ABC DEF GHI</textarea>
+
+<a href=https://www.omniglot.com/writing/zaghawa.htm>
+https://www.omniglot.com/writing/zaghawa.htm></a>
+
+<p> PUA: start f0061
+&#xF0061;
+&#xF0062;
+
+&#xF0041;
+&#xF0042;
+
+<hr>
+
+<p> Macron:: 
+ &#xF0061;&#x0304;
+<hr>
+
+<p>
+acute:
+
+ &#xF0061;&#x0301;
+
+<p> Generate PUA HTML codes:<br>
+<pre>
+#!/usr/bin/env julia
+
+function puaHexStr(x)
+ s = lpad( string(x, base=16), 2 , "0")
+ "&#xF00$s;"
+end
+
+println.( puaHexStr.(0:0xff) )
+
+
+</pre>
+<hr>
+</p>
+
+<p> PUA: start f0000
+<br>
+
+&#xF0000;
+&#xF0001;
+&#xF0002;
+&#xF0003;
+&#xF0004;
+&#xF0005;
+&#xF0006;
+&#xF0007;
+&#xF0008;
+&#xF0009;
+&#xF000a;
+&#xF000b;
+&#xF000c;
+&#xF000d;
+&#xF000e;
+&#xF000f;
+&#xF0010;
+&#xF0011;
+&#xF0012;
+&#xF0013;
+&#xF0014;
+&#xF0015;
+&#xF0016;
+&#xF0017;
+&#xF0018;
+&#xF0019;
+&#xF001a;
+&#xF001b;
+&#xF001c;
+&#xF001d;
+&#xF001e;
+&#xF001f;
+&#xF0020;
+&#xF0021;
+&#xF0022;
+&#xF0023;
+&#xF0024;
+&#xF0025;
+&#xF0026;
+&#xF0027;
+&#xF0028;
+&#xF0029;
+&#xF002a;
+&#xF002b;
+&#xF002c;
+&#xF002d;
+&#xF002e;
+&#xF002f;
+&#xF0030;
+&#xF0031;
+&#xF0032;
+&#xF0033;
+&#xF0034;
+&#xF0035;
+&#xF0036;
+&#xF0037;
+&#xF0038;
+&#xF0039;
+&#xF003a;
+&#xF003b;
+&#xF003c;
+&#xF003d;
+&#xF003e;
+&#xF003f;
+&#xF0040;
+&#xF0041;
+&#xF0042;
+&#xF0043;
+&#xF0044;
+&#xF0045;
+&#xF0046;
+&#xF0047;
+&#xF0048;
+&#xF0049;
+&#xF004a;
+&#xF004b;
+&#xF004c;
+&#xF004d;
+&#xF004e;
+&#xF004f;
+&#xF0050;
+&#xF0051;
+&#xF0052;
+&#xF0053;
+&#xF0054;
+&#xF0055;
+&#xF0056;
+&#xF0057;
+&#xF0058;
+&#xF0059;
+&#xF005a;
+&#xF005b;
+&#xF005c;
+&#xF005d;
+&#xF005e;
+&#xF005f;
+&#xF0060;
+&#xF0061;
+&#xF0062;
+&#xF0063;
+&#xF0064;
+&#xF0065;
+&#xF0066;
+&#xF0067;
+&#xF0068;
+&#xF0069;
+&#xF006a;
+&#xF006b;
+&#xF006c;
+&#xF006d;
+&#xF006e;
+&#xF006f;
+&#xF0070;
+&#xF0071;
+&#xF0072;
+&#xF0073;
+&#xF0074;
+&#xF0075;
+&#xF0076;
+&#xF0077;
+&#xF0078;
+&#xF0079;
+&#xF007a;
+&#xF007b;
+&#xF007c;
+&#xF007d;
+&#xF007e;
+&#xF007f;
+&#xF0080;
+&#xF0081;
+&#xF0082;
+&#xF0083;
+&#xF0084;
+&#xF0085;
+&#xF0086;
+&#xF0087;
+&#xF0088;
+&#xF0089;
+&#xF008a;
+&#xF008b;
+&#xF008c;
+&#xF008d;
+&#xF008e;
+&#xF008f;
+&#xF0090;
+&#xF0091;
+&#xF0092;
+&#xF0093;
+&#xF0094;
+&#xF0095;
+&#xF0096;
+&#xF0097;
+&#xF0098;
+&#xF0099;
+&#xF009a;
+&#xF009b;
+&#xF009c;
+&#xF009d;
+&#xF009e;
+&#xF009f;
+&#xF00a0;
+&#xF00a1;
+&#xF00a2;
+&#xF00a3;
+&#xF00a4;
+&#xF00a5;
+&#xF00a6;
+&#xF00a7;
+&#xF00a8;
+&#xF00a9;
+&#xF00aa;
+&#xF00ab;
+&#xF00ac;
+&#xF00ad;
+&#xF00ae;
+&#xF00af;
+&#xF00b0;
+&#xF00b1;
+&#xF00b2;
+&#xF00b3;
+&#xF00b4;
+&#xF00b5;
+&#xF00b6;
+&#xF00b7;
+&#xF00b8;
+&#xF00b9;
+&#xF00ba;
+&#xF00bb;
+&#xF00bc;
+&#xF00bd;
+&#xF00be;
+&#xF00bf;
+&#xF00c0;
+&#xF00c1;
+&#xF00c2;
+&#xF00c3;
+&#xF00c4;
+&#xF00c5;
+&#xF00c6;
+&#xF00c7;
+&#xF00c8;
+&#xF00c9;
+&#xF00ca;
+&#xF00cb;
+&#xF00cc;
+&#xF00cd;
+&#xF00ce;
+&#xF00cf;
+&#xF00d0;
+&#xF00d1;
+&#xF00d2;
+&#xF00d3;
+&#xF00d4;
+&#xF00d5;
+&#xF00d6;
+&#xF00d7;
+&#xF00d8;
+&#xF00d9;
+&#xF00da;
+&#xF00db;
+&#xF00dc;
+&#xF00dd;
+&#xF00de;
+&#xF00df;
+&#xF00e0;
+&#xF00e1;
+&#xF00e2;
+&#xF00e3;
+&#xF00e4;
+&#xF00e5;
+&#xF00e6;
+&#xF00e7;
+&#xF00e8;
+&#xF00e9;
+&#xF00ea;
+&#xF00eb;
+&#xF00ec;
+&#xF00ed;
+&#xF00ee;
+&#xF00ef;
+&#xF00f0;
+&#xF00f1;
+&#xF00f2;
+&#xF00f3;
+&#xF00f4;
+&#xF00f5;
+&#xF00f6;
+&#xF00f7;
+&#xF00f8;
+&#xF00f9;
+&#xF00fa;
+&#xF00fb;
+&#xF00fc;
+&#xF00fd;
+&#xF00fe;
+&#xF00ff;
+---
+</p>
+
+<hr>
+
+<p> same: pasted as chars : <br>
+<p>
+󰀀 󰀁 󰀂 󰀃 󰀄 󰀅 󰀆 󰀇 󰀈 󰀉 󰀊 󰀋 󰀌 󰀍 󰀎 󰀏 󰀐 󰀑 󰀒 󰀓 󰀔 󰀕 󰀖 󰀗 󰀘 󰀙 󰀚 󰀛 󰀜 󰀝 󰀞 󰀟 󰀠 󰀡 󰀢 󰀣 󰀤 󰀥 󰀦 󰀧 󰀨 󰀩 󰀪 󰀫 󰀬 󰀭 󰀮 󰀯 󰀰 󰀱 󰀲 󰀳 󰀴 󰀵 󰀶 󰀷 󰀸 󰀹 󰀺 󰀻 󰀼 󰀽 󰀾 󰀿 󰁀 󰁁 󰁂 󰁃 󰁄 󰁅 󰁆 󰁇 󰁈 󰁉 󰁊 󰁋 󰁌 󰁍 󰁎 󰁏 󰁐 󰁑 󰁒 󰁓 󰁔 󰁕 󰁖 󰁗 󰁘 󰁙 󰁚 󰁛 󰁜 󰁝 󰁞 󰁟 󰁠 󰁡 󰁢 󰁣 󰁤 󰁥 󰁦 󰁧 󰁨 󰁩 󰁪 󰁫 󰁬 󰁭 󰁮 󰁯 󰁰 󰁱 󰁲 󰁳 󰁴 󰁵 󰁶 󰁷 󰁸 󰁹 󰁺 󰁻 󰁼 󰁽 󰁾 󰁿 󰂀 󰂁 󰂂 󰂃 󰂄 󰂅 󰂆 󰂇 󰂈 󰂉 󰂊 󰂋 󰂌 󰂍 󰂎 󰂏 󰂐 󰂑 󰂒 󰂓 󰂔 󰂕 󰂖 󰂗 󰂘 󰂙 󰂚 󰂛 󰂜 󰂝 󰂞 󰂟 󰂠 󰂡 󰂢 󰂣 󰂤 󰂥 󰂦 󰂧 󰂨 󰂩 󰂪 󰂫 󰂬 󰂭 󰂮 󰂯 󰂰 󰂱 󰂲 󰂳 󰂴 󰂵 󰂶 󰂷 󰂸 󰂹 󰂺 󰂻 󰂼 󰂽 󰂾 󰂿 󰃀 󰃁 󰃂 󰃃 󰃄 󰃅 󰃆 󰃇 󰃈 󰃉 󰃊 󰃋 󰃌 󰃍 󰃎 󰃏 󰃐 󰃑 󰃒 󰃓 󰃔 󰃕 󰃖 󰃗 󰃘 󰃙 󰃚 󰃛 󰃜 󰃝 󰃞 󰃟 󰃠 󰃡 󰃢 󰃣 󰃤 󰃥 󰃦 󰃧 󰃨 󰃩 󰃪 󰃫 󰃬 󰃭 󰃮 󰃯 󰃰 󰃱 󰃲 󰃳 󰃴 󰃵 󰃶 󰃷 󰃸 󰃹 󰃺 󰃻 󰃼 󰃽 󰃾 󰃿
+
+
+--------
+
+
+
+
+</p>
+<hr>
+
+</body>
+</html>
