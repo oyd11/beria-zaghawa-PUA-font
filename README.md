@@ -7,6 +7,7 @@ SIL Open Font License 1.1
 
 see:
  * http://languagetools-153419.appspot.com/zag/ : Craig Cornelius (ᏇᎩ) 's Beria / Zaghawa
+ * https://www.omniglot.com/writing/zaghawa.htm
  * https://github.com/fontforge/fontforge
  * https://fontforge.org/en-US/
  * https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=zaghawaberia_home
