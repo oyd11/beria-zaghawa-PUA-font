@@ -1,4 +1,4 @@
-# beria-zaghawa-PUA-fontk
+# beria-zaghawa-PUA-font
 ## Beria font, encoded in Unicode PUA
 
 Based on the SIL provides font, using the
@@ -13,7 +13,14 @@ see:
  * https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=zaghawaberia_home
  * https://github.com/silnrsi/font-beria-new
 
+### Original SIL ASCII mapping font
+
+This is quite useful, as it's possible to type using any Latin keyboard map this way, and it's possible to render it in many systems.
+
+The downside is obviously that the Beria characters override Latin this way.... so searchability is hurt.
+
 ----
+
 
 From: Kobic
 Date: Thu, 11 Apr 2019 at 01:15
